@@ -1,0 +1,66 @@
+
+$ uptime
+ 09:53:14 up  2:03,  1 user,  load average: 0.16, 0.18, 0.14
+
+$ free -h
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.8Gi       303Mi        36Mi       1.9Gi       2.0Gi
+Swap:          1.3Gi          0B       1.3Gi
+
+$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.8G     0  1.8G   0% /dev
+tmpfs           391M  976K  390M   1% /run
+/dev/sda3        23G   15G  6.8G  69% /
+tmpfs           2.0G   13M  1.9G   1% /dev/shm
+efivarfs        256K  6.3K  250K   3% /sys/firmware/efi/efivars
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           2.0G  3.9M  2.0G   1% /tmp
+/dev/sda2       977M  368K  977M   1% /boot/efi
+tmpfs           1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+tmpfs           391M  120K  391M   1% /run/user/1000
+
+$ uname -a
+Linux kali 6.17.10+kali-arm64 #1 SMP PREEMPT Kali 6.17.10-1kali1 (2025-12-08) aarch64 GNU/Linux
+
+$ whoami
+viktor
+
+$ lscpu
+Architecture:                            aarch64
+CPU op-mode(s):                          64-bit
+Byte Order:                              Little Endian
+CPU(s):                                  2
+On-line CPU(s) list:                     0,1
+Vendor ID:                               Apple
+Model name:                              -
+Model:                                   0
+Thread(s) per core:                      1
+Core(s) per cluster:                     2
+Socket(s):                               -
+Cluster(s):                              1
+Stepping:                                0x0
+BogoMIPS:                                48.00
+Flags:                                   fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm jscvt fcma lrcpc dcpop sha3 asimddp sha512 asimdfhm dit uscat ilrcpc flagm ssbs sb paca pacg dcpodp flagm2 frint
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0,1
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Ghostwrite:                Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Old microcode:             Not affected
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Not affected
+Vulnerability Spec rstack overflow:      Not affected
+Vulnerability Spec store bypass:         Mitigation; Speculative Store Bypass disabled via prctl
+Vulnerability Spectre v1:                Mitigation; __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; CSV2, but not BHB
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Not affected
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Not affected
