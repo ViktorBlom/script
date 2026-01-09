@@ -1,1 +1,1 @@
-# Mina script
+#Mina Script
