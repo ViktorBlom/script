@@ -1,0 +1,16 @@
+# Roadmap – System Health Checker
+
+## Kortsiktiga mål
+- Lägga till varningar om disk- eller minnesanvändning över tröskelvärden
+- Förbättrad felhantering om Linux-kommandon saknas
+- Separata loggfiler per körning med datum och tid
+
+## Medellånga mål
+- Stöd för kommandoradsflaggor (t.ex. --help, --version)
+- Automatisk kontroll av systemkrav innan scriptet körs
+- Export av systeminformation till JSON eller CSV
+
+## Långsiktiga mål
+- Stöd för fler operativsystem
+- Integration med säkerhetsverktyg
+- Schemalagd körning via cron
