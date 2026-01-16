@@ -1,36 +1,58 @@
-## Log cleaner and system health checker
-Scriptet automatiserar insamling av system- och nätverksinformation i en Linux-miljö och presenterar resultatet via ett menybaserat gränssnitt i terminalen.
+<img width="1008" height="625" alt="image" src="https://github.com/user-attachments/assets/1de53b3d-c32b-45fc-b391-595d739cc832" />
+
+
+# System Health Checker (Python)
+
+## Syfte / Mål
+Syftet med detta projekt är att skapa ett Python-script som automatiserar insamling av system- och nätverksinformation i en Linux-miljö.  
+Scriptet används för recon (rekognosering), vilket är ett första steg i säkerhetsarbete och felsökning, där man skaffar sig en överblick över systemets status.
+
+Målet är att samla relevant information på ett strukturerat sätt och kunna visa samt spara resultatet för vidare analys.
 
 ---
 
-## Syfte
+## Funktion
+Scriptet erbjuder ett menybaserat gränssnitt där användaren kan välja mellan olika alternativ:
 
-Syftet med scriptet är att automatisera vanliga rekognoserings och systemkontroller samt systemadministration och incidenthantering.
+- Visa systemhälsa:
+  - Systemets drifttid och belastning (uptime)
+  - Minnesanvändning (RAM och swap)
+  - Diskutrymme
+  - Operativsystem och kernel
+  - Aktiv användare
+  - CPU-information och säkerhetsrelaterade flaggor
+- Visa nätverksinformation:
+  - Aktiva nätverksinterface
+  - IPv4- och IPv6-adresser
+- All output skrivs ut i terminalen och sparas även till en loggfil (`recon_output.txt`)
 
-På detta sätt skapas en pedagogisk överblick över datorns och nätverkets hälsotillstånd
+---
 
+## Systemkrav
+För att köra scriptet krävs:
 
-## Funktioner
+- Linux-operativsystem (t.ex. Kali Linux eller Ubuntu)
+- Python 3
+- Tillgång till följande Linux-kommandon:
+  - `uptime`
+  - `free`
+  - `df`
+  - `uname`
+  - `whoami`
+  - `lscpu`
+  - `ip`
 
-- Menybaserat och interaktivt gränssnitt
-- Automatiserar flera Linux-kommandon
-- Samlar in systeminformation:
-  - systemets drifttid (uptime)
-  - minnesanvändning
-  - diskutrymme
-  - CPU-information
-- Visar nätverksgränssnitt
-- Loggar utdata till fil för senare analys
+Scriptet är testat i en Linux-miljö och är inte avsett att köras på Windows.
 
-## Krav
+---
 
-- Linux-operativsystem
-- Python 3.8 eller senare
-- Det räcker med Pythons standardbibliotek
+## Instruktioner
+Kör scriptet:
 
-## Användning
-
-Kör scriptet från terminalen:
-
-```bash
+bash
 python3 recon_tool.py
+Följ instruktionerna i menyn genom att välja ett alternativ.
+
+Efter körning sparas all insamlad information automatiskt i filen:
+
+recon_output.txt
